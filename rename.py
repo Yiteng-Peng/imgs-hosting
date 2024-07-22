@@ -13,7 +13,7 @@ def generate_random_hex_name():
     return ''.join(random.choices(string.hexdigits.lower(), k=12))
 
 def rename_images():
-    image_extensions = ['.jpg', '.jpeg', '.png', '.gif']  # 可根据需要添加其他图片格式的扩展名
+    image_extensions = ['.jpg', '.jpeg', '.png', '.gif', '.svg']  # 可根据需要添加其他图片格式的扩展名
     new_name_list = []
 
     for file in os.listdir('.'):
